@@ -221,7 +221,7 @@ def generate_chart():
     
     return jsonify({"chart": f"data:image/png;base64,{plot_url}"})
 
-if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 10000))
-    app.run(host="0.0.0.0", port=port)
+if __name__ == '__main__':
+    port = int(os.environ.get('PORT', 10000))
+    app.run(host='0.0.0.0', port=port, debug=False)
 
