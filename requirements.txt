@@ -1,0 +1,9 @@
+flask
+gunicorn
+nltk
+pandas
+numpy
+transformers
+torch
+matplotlib
+seaborn
