@@ -1,14 +1,13 @@
 from flask import Flask, request, jsonify, render_template, send_file
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
+import nltk
+nltk.download('vader_lexicon')
 import io
 import base64
 import pandas as pd
-import numpy as np
 from transformers import pipeline
 import matplotlib.pyplot as plt
-import seaborn as sns
 from datetime import datetime
-import json
 import csv
 from collections import Counter
 import re
